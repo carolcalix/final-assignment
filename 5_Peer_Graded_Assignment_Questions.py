@@ -74,11 +74,10 @@ def compute_data_choice_2(df):
 app.layout = html.Div(children=[ 
                                 # TASK1: Add title to the dashboard
                                 # Enter your code below. Make sure you have correct formatting.
-                                html.Div(children=
-                                    [
-                                        html.H2("US Domestic Airline Flights Performance", style={'text-align-last': 'center', 'color': '#503D36', 'font-size': 24}
+                                html.H2("US Domestic Airline Flights Performance", 
+                                        style={'text-align-last': 'center', 'color': '#503D36', 'font-size': 24}),
                                         
-                                        ),
+                                       
                                 # REVIEW2: Dropdown creation
                                 # Create an outer division 
                                 html.Div([
@@ -92,9 +91,7 @@ app.layout = html.Div(children=[
                                         ),
                                         # TASK2: Add a dropdown
                                         # Enter your code below. Make sure you have correct formatting.
-                                        html.Div(
-                                            [
-                                                dcc.Dropdown(id='input-type',
+                                        dcc.Dropdown(id='input-type',
                                                             options=[
                                                                         {'label': 'Yearly Airline Performance Report', 'value': 'OPT1'},
                                                                         {'label': 'Yearly Airline Delay Report', 'value': 'OPT2'}
